@@ -23,10 +23,22 @@ body{
     --body-color: #f2f2f2;
     --primary-blue: #58a6ff;
 }
-main{
+.main{
     min-height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    &-left{
+        width: calc(100% - 300px);
+        display: flex;
+        flex-direction: column;
+    }
+    &-right{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 button{
     background: none;

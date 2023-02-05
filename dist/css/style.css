@@ -25,6 +25,22 @@
 @font-face {
   font-family: Rubik;
   font-display: swap;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
   src: url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -33,14 +49,6 @@
 @font-face {
   font-family: Rubik;
   font-display: swap;
-  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Rubik;
-  font-display: swap;
   src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -51,14 +59,6 @@
   font-display: swap;
   src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Rubik;
-  font-display: swap;
-  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -161,7 +161,7 @@
 
 .header-bot a {
   display: block;
-  padding: 10px;
+  padding: 15px 10px;
   font-weight: 400;
 }
 
@@ -310,6 +310,7 @@
 
 .header__lang-title img {
   width: 16px;
+  height: auto;
 }
 
 .header__lang-title p {
@@ -405,8 +406,36 @@ body {
   --primary-blue: #58a6ff;
 }
 
-main {
+.main {
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-left {
+  width: calc(100% - 300px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-right {
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
