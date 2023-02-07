@@ -406,8 +406,18 @@ body {
   --primary-blue: #58a6ff;
 }
 
-.main {
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100%;
+}
+
+.category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +433,7 @@ body {
           flex-direction: row;
 }
 
-.main-left {
+.category-left {
   width: calc(100% - 300px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,7 +444,7 @@ body {
           flex-direction: column;
 }
 
-.main-right {
+.category-right {
   width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
